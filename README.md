@@ -22,3 +22,29 @@ Second number: 7
 Expected result: Result: 42.0
 
 Press Ctrl+C to stop the calculator.
+
+## Testing the calculator
+
+Python 3 is required.
+
+The testing dependency is pytest, listed in requirements-dev.txt.
+
+Activate the SCCM4910 environment:
+
+source /opt/python-venv/sccm-4910/bin/activate
+
+Run the quality gate:
+
+./check.sh
+
+Expected result: 5 passed and QUALITY GATE PASSED.
+
+Exit status 0 means all tests passed.
+A non-zero exit status means the quality gate failed.
+
+Check the exit status immediately after running:
+
+echo $?
+
+The existing ./run.sh command can still be used
+to run the calculator.
